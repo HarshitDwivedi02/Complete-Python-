@@ -169,4 +169,6 @@ while i < length:
     print(list1[i])
     i+=1 ''' 
 
+# Practice Problems 
 
+# 1 
