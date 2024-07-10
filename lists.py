@@ -167,8 +167,141 @@ i=0
 length=len(list1)
 while i < length:
     print(list1[i])
-    i+=1 ''' 
+    i+=1 
 
 # Practice Problems 
 
-# 1 
+# 1 Program to find the sum of all the elements in a list 
+data = [23,45,43,99,1234,6712,-159]
+#sum=0
+#length=len(data)
+
+#for i in data:
+    #sum = sum+ i
+    #i+=1
+
+#print(sum)
+
+# Method using direct sum function 
+total = sum(data)
+print(total)  
+
+# 2 Product of all the elements in the list
+
+myList = [65, 78, 55, 42, 17, 58, 99]
+product=1
+
+for i in myList:
+    product=product*i
+
+print(product) 
+
+# 3 Take 10 elements from user and store them in a list
+# list=[]
+
+# list.append(input())
+
+# for i in list:
+#     print(i)
+
+myList = []
+# Running loop 10 times
+for i in range(1, 11):
+    n = int(input("Enter any number = "))
+    myList.append(n) # Adding number o the list
+    print("Answer = ", myList) 
+
+# 4 Take 20 integer inputs from user and print the following:
+#a. number of positive numbers
+#b. number of negative numbers
+#c. number of odd numbers
+#d. number of even numbers
+#e. number of 0s.
+
+
+list=[]
+for i in range(1,11):
+    n=int(input())
+    list.append(n)
+
+positive=0
+negative=0
+odd=0
+even=0
+zero=0
+
+for i in list:
+    if i > 0:
+        positive+=1
+
+    elif i < 0:
+        negative+=1
+    
+    else:
+        zero+=1
+
+    if i%2==0:
+        even+=1
+    else:
+        odd+=1 
+
+print("Positives are",positive)
+print("Negatives are",negative)
+print("Evens are",even)
+print("Odds are",odd)
+print("Zeroes are",zero) '''
+
+'''
+ 5 Take 10 integer inputs from user and store them in a list. Again, ask user
+to give a number. Now, tell user whether that number is present in list or
+not.
+
+list=[]
+
+for i in range(1,11):
+    n=int(input("Enter the number:"))
+    list.append(n)
+
+num=int(input("Enter the number to check:"))
+
+if num in list:
+    print("Present in the list")
+else:
+    print("Not present in the list") ''' 
+
+''' 6 Make a list by taking 10 inputs from user. Now delete all repeated
+elements of the list. 
+
+
+myList = []
+# Running loop 10 times
+for i in range(1, 11):
+    n = int(input("Enter any number = "))
+    myList.append(n) # Adding number o the list
+newList = []
+for i in myList:
+    if i not in newList: # Check if number is present
+        newList.append(i)
+print(f"Old list -> {myList}")
+print(f"New list -> {newList}") 
+
+# 7 Take user inputfor elements add only if the number is even 
+
+list=[]
+
+for i in range(1,11):
+    n=int(input("Enter the number: "))
+    if n%2==0:
+        list.append(n)
+print(list) ''' 
+
+
+
+
+
+
+
+
+
+
+    
