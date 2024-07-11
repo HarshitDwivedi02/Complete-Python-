@@ -59,9 +59,24 @@ data4 = data2 * 3
 print(data1)
 print(data2)
 print(data3)
-print(data4) ''' 
+print(data4) 
 
 # 4 Python tuple slicing 
+
+data=(54, "Python", 21, 43, 54, "87", "Language")
+print(data[0:4])
+print(data[-1:])
+print(data[0:])
+print(data[:5])
+
+# 5 Python deleting tuple elementst 
+data = (54, "Python", 21, 43, 54, "87", "Language")
+print(data)
+del data[2]
+print(data) 
+
+''' 
+
 
 
 
